@@ -1,3 +1,4 @@
+windows.options(width=480, height=480)
 temp<-read.csv("./household_power_consumption.txt",sep=";")
 temp$Date<-as.Date(strptime(temp$Date,"%d/%m/%Y"))
 newdat<-temp[temp$Date>=as.Date(strptime("01/02/2007","%d/%m/%Y")) & temp$Date<=as.Date(strptime("02/02/2007","%d/%m/%Y")),]
