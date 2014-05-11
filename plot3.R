@@ -1,10 +1,7 @@
 # Default settings
 windows.options(width=480, height=480)
-<<<<<<< HEAD
 dev.new(width=480, height=480)
 par(pin=c(4.8,4.8))
-=======
->>>>>>> f98da0d26a042698e64950a5b8b810b4f2bea1e4
 Sys.setlocale("LC_TIME","English")
 # Read and process data
 temp<-read.csv("./household_power_consumption.txt",sep=";")

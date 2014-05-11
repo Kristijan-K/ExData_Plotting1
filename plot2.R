@@ -9,13 +9,6 @@ temp$Date<-as.Date(strptime(temp$Date,"%d/%m/%Y"))
 newdat<-temp[temp$Date>=as.Date(strptime("01/02/2007","%d/%m/%Y")) & temp$Date<=as.Date(strptime("02/02/2007","%d/%m/%Y")),]
 newdat$Global_active_power<-as.numeric(gsub("\\?","NA",newdat$Global_active_power))
 # Plot data
-=======
-windows.options(width=480, height=480)
-temp<-read.csv("./household_power_consumption.txt",sep=";")
-temp$Date<-as.Date(strptime(temp$Date,"%d/%m/%Y"))
-newdat<-temp[temp$Date>=as.Date(strptime("01/02/2007","%d/%m/%Y")) & temp$Date<=as.Date(strptime("02/02/2007","%d/%m/%Y")),]
-newdat$Global_active_power<-as.numeric(gsub("\\?","NA",newdat$Global_active_power))
->>>>>>> f98da0d26a042698e64950a5b8b810b4f2bea1e4
 y<-paste(as.character(newdat$Date),as.character(newdat$Time))
 y<-strptime(y,"%Y-%m-%d %H:%M:%S")
 newdat<-cbind(newdat,y)
