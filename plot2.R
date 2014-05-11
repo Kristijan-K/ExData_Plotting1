@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Default settings
 windows.options(width=480, height=480)
 Sys.setlocale("LC_TIME","English")
